@@ -70,9 +70,9 @@ bot.command('total_rewards_given', async (ctx) => {
 // Command to get the lottery round
 bot.command('lottery_round', async (ctx) => {
   try {
-    const lotteryRound = await contract1.methods._
-lotteryRound().call();
-    const message = `Lottery Round: ${lotteryRound.toString()}`;
+    const lotteryRound = await contract1.methods._lotteryRound().call();
+    const message
+ = `Lottery Round: ${lotteryRound.toString()}`;
     ctx.reply(message);
   } catch (error) {
     console.error('Error getting lottery round:', error);
