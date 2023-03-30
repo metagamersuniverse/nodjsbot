@@ -1,0 +1,25 @@
+developer to implement the Telegram bot based on the JavaScript functions you provided:
+
+/latest_winner_info - Sends the latest winner information for the lottery, including the winner's wallet address and prize amount.
+Retrieve the latest round number from the smart contract using the _lotteryRound function.
+Retrieve the winner information for the latest round using the lotteryWinnerInfo function.
+Convert the prize amount to a readable format (e.g. ETH).
+Send the winner information to the user in a Telegram message.
+/wallet_balance - Sends the current balance of a specified wallet address.
+Retrieve the balance of the specified wallet address using the getBalance function from the ethers library.
+Convert the balance to a readable format (e.g. ETH).
+Send the balance to the user in a Telegram message.
+/lottery_participants_amount - Sends the total number of participants in the lottery.
+Retrieve the total number of participants using the lotteryParticipantsAmount function from the smart contract.
+Send the number of participants to the user in a Telegram message.
+/total_rewards_given - Sends the total rewards given by the owner of the lottery.
+Retrieve the total rewards given using the totalRewardsGiven function from the smart contract.
+Send the total rewards given to the user in a Telegram message.
+/lottery_round - Sends the current round number of the lottery.
+Retrieve the current round number using the _lotteryRound function from the smart contract.
+Send the current round number to the user in a Telegram message.
+/winner_details [round number] - Sends the winner information for a specified round number, including the winner's wallet address and prize amount.
+Retrieve the winner information for the specified round number using the lotteryWinnerInfo function from the smart contract.
+Convert the prize amount to a readable format (e.g. ETH).
+Send the winner information to the user in a Telegram message.
+To implement these commands, the developer can use the Telegraf API for Node.js to listen for the commands and send the responses to the user. They can also use the web3 and ethers libraries to interact with the smart contract and retrieve the required information.
